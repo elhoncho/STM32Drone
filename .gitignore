@@ -1,0 +1,6 @@
+# Eclipse CDT project files
+.settings/
+Debug/
+
+# Mac Files
+.DS_Store

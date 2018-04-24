@@ -1,0 +1,3 @@
+[submodule "AT86RF212B"]
+	path = AT86RF212B
+	url = https://github.com/elhoncho/AT86RF212B.git

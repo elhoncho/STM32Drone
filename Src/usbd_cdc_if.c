@@ -51,10 +51,10 @@
 #include "usbd_cdc_if.h"
 
 /* USER CODE BEGIN INCLUDE */
-#include "../AT86RF212B/Inc/errors_and_logging.h"
 #include "../AT86RF212B/Inc/RawMode.h"
 #include "../AT86RF212B/Inc/AT86RF212B.h"
 #include "../AT86RF212B/Inc/Buffer.h"
+#include "../AT86RF212B/Inc/ErrorsAndLogging.h"
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,8 +96,8 @@
 /* USER CODE BEGIN PRIVATE_DEFINES */
 /* Define size for the receive and transmit buffer over CDC */
 /* It's up to user to redefine and/or remove those define */
-#define APP_RX_DATA_SIZE  128
-#define APP_TX_DATA_SIZE  128
+#define APP_RX_DATA_SIZE  1024
+#define APP_TX_DATA_SIZE  1024
 /* USER CODE END PRIVATE_DEFINES */
 
 /**

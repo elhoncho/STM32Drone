@@ -51,10 +51,10 @@
 #include "usbd_cdc_if.h"
 
 /* USER CODE BEGIN INCLUDE */
-#include "../AT86RF212B/Inc/interfaceHAL.h"
 #include "../AT86RF212B/Inc/errors_and_logging.h"
 #include "../AT86RF212B/Inc/RawMode.h"
 #include "../AT86RF212B/Inc/AT86RF212B.h"
+#include "../AT86RF212B/Inc/Buffer.h"
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -308,7 +308,7 @@ static int8_t CDC_Receive_HS(uint8_t* Buf, uint32_t *Len)
   /* USER CODE BEGIN 11 */
   USBD_CDC_SetRxBuffer(&hUsbDeviceHS, &Buf[0]);
   for(uint32_t i = 0; i < *Len; i++){
-	  InterfacePushToInputBufferHAL(Buf[i]);
+	  PushToInputBuffer(Buf[i]);
   }
   return (USBD_OK);
   /* USER CODE END 11 */

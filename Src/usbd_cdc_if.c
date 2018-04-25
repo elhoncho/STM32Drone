@@ -307,9 +307,8 @@ static int8_t CDC_Receive_HS(uint8_t* Buf, uint32_t *Len)
 {
   /* USER CODE BEGIN 11 */
   USBD_CDC_SetRxBuffer(&hUsbDeviceHS, &Buf[0]);
-  uint8_t bufferStatus;
   for(uint32_t i = 0; i < *Len; i++){
-	  bufferStatus = InterfacePushToInputBufferHAL(Buf[i]);
+	  InterfacePushToInputBufferHAL(Buf[i]);
   }
   return (USBD_OK);
   /* USER CODE END 11 */

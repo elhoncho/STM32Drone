@@ -51,7 +51,7 @@
 #include "usb_device.h"
 
 /* USER CODE BEGIN Includes */
-#include "MainController.h"
+#include "../AT86RF212B/Inc/MainController.h"
 
 /* USER CODE END Includes */
 

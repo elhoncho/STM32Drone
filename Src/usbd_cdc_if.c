@@ -51,10 +51,10 @@
 #include "usbd_cdc_if.h"
 
 /* USER CODE BEGIN INCLUDE */
-#include <interfaceHAL.h>
-#include <errors_and_logging.h>
-#include <RawMode.h>
-#include <AT86RF212B.h>
+#include "../AT86RF212B/Inc/interfaceHAL.h"
+#include "../AT86RF212B/Inc/errors_and_logging.h"
+#include "../AT86RF212B/Inc/RawMode.h"
+#include "../AT86RF212B/Inc/AT86RF212B.h"
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/

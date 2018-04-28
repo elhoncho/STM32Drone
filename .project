@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>STM32Drone</name>
-	<comment></comment>
+	<name>FlightController</name>
+	<comment />
 	<projects>
 	</projects>
 	<buildSpec>
